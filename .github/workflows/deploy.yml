@@ -27,7 +27,7 @@ jobs:
       shell: bash
 
     - name: Stop existing PM2 process
-      run: pm2 delete terry-davis-discord-bot || true
+      run: pm2 delete rms-discord-bot || true
 
     - name: Start application with PM2
       run: pm2 start npm --name "rms-discord-bot" -- run start
